@@ -4,16 +4,18 @@
 extern crate rlibc;
 
 use core::sync::atomic;
-use sos::{gdt, light::utils};
+use sos::{gdt, light::{idt, utils}};
 
 static mut INIT: atomic::AtomicBool = atomic::AtomicBool::new(true);
 
 unsafe fn init() {
     gdt::init();
+    idt::init();
 }
 
 unsafe fn load_system_tables() {
     gdt::load();
+    idt::load();
 }
 
 #[no_mangle]

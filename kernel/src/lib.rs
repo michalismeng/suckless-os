@@ -1,5 +1,6 @@
 #![no_std]
 #![feature(asm)]
+#![feature(abi_x86_interrupt)]
 
 #[allow(dead_code)]
 #[allow(non_snake_case)]
