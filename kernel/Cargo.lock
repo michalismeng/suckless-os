@@ -37,6 +37,7 @@ dependencies = [
  "rlibc",
  "spin",
  "uart_16550",
+ "x86_64",
 ]
 
 [[package]]

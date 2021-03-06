@@ -7,6 +7,7 @@
 #[allow(clippy::upper_case_acronyms)]
 #[allow(clippy::redundant_static_lifetimes)]
 pub mod bootboot;
+pub mod gdt;
 pub mod light;
 
 use core::panic::PanicInfo;
