@@ -17,3 +17,6 @@ panic = "abort"
 
 [dependencies]
 rlibc = "1.0"
+uart_16550 = "0.2.12"
+spin = "0.7.1"
+raw-cpuid = "9.0.0"

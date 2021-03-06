@@ -1,17 +1,14 @@
 #![no_std]
 #![no_main]
 
-extern crate rlibc;
+use sos::light::utils;
 
-use core::panic::PanicInfo;
+extern crate rlibc;
 
 #[no_mangle]
 unsafe fn _start() -> ! {
-    loop {}
-}
+    utils::print_stack_usage();
 
-#[cfg(not(test))]
-#[panic_handler]
-fn panic(_info: &PanicInfo) -> ! {
+    #[allow(clippy::empty_loop)]
     loop {}
 }
