@@ -10,6 +10,7 @@
 pub mod bootboot;
 pub mod gdt;
 pub mod light;
+pub mod vmemory;
 
 use core::panic::PanicInfo;
 use light::kdebug;
