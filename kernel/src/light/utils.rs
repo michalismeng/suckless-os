@@ -39,6 +39,7 @@ pub fn int_to_bytes(value: u64, result: &mut [u8], base: u64) {
     }
 }
 
+#[allow(dead_code)]
 pub fn print_stack_usage() {
     use super::kdebug;
     use crate::kdbg_ctx;
