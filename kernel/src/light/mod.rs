@@ -61,8 +61,7 @@ fn begin_new_environment() -> ! {
         kdebug::print(b". Everything is OK.\n")
     );
 
-    #[allow(clippy::empty_loop)]
-    loop {}
+    crate::core::initialize();
 }
 
 unsafe fn allocate_stack_space() -> ! {
