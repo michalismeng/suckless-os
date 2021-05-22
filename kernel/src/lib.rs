@@ -11,8 +11,9 @@ pub mod bootboot;
 pub mod gdt;
 pub mod light;
 pub mod vmemory;
+pub mod core;
 
-use core::panic::PanicInfo;
+use ::core::panic::PanicInfo;
 use light::kdebug;
 
 #[cfg(not(test))]
